@@ -1,0 +1,26 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#cvMap{
+	border:1px solid #000000;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	/*padding: 0px;*/
+}
+
+.jugador > img {
+	max-width: 150px;
+	max-height: 150px;
+	margin: 5px;
+	border: 10px solid black;
+	padding: 5px;
+}
+
+.jugador {
+	/*escondido por default*/
+	display: none;
+}
