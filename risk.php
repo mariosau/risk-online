@@ -20,7 +20,7 @@ class risk {
 	
 	//ya no tengo constructor, porque hacia cosas raras...
 	function inicializar($id,$jugador) {
-		include "bd_info";
+		include "bd_info.php";
 		
 		$this->conn = new mysqli($servername, $username, $password, $dbname);
 		if ($this->conn->connect_error) {
@@ -60,7 +60,7 @@ class risk {
 	
 	//este pseudo-constructor solo toma el ID para ver quienes juegan
 	function jugadores($id) {
-		include "bd_info";
+		include "bd_info.php";
 		
 		$this->conn = new mysqli($servername, $username, $password, $dbname);
 		if ($this->conn->connect_error) {

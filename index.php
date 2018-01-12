@@ -3,7 +3,7 @@ include "sesion.php";
 $jugador_id = $_SESSION["id"];
 
 //Conectar a BD
-include "bd_info";
+include "bd_info.php";
 
 // Crear conexion
 $conn = new mysqli($servername, $username, $password, $dbname);

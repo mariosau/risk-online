@@ -11,7 +11,7 @@ if(isset($_SESSION["id"])) {
 } else {
 	if(isset($_POST["email"]) and isset($_POST["pw"])) {
 		//Conectar a BD
-		include "bd_info";
+		include "bd_info.php";
 		
 		// Crear conexion
 		$conn = new mysqli($servername, $username, $password, $dbname);
